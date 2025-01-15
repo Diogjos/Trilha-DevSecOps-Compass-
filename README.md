@@ -9,13 +9,13 @@ Este projeto configura um servidor Nginx e realiza monitoramento com script auto
 3. **Bash e Cron**
    -  Criação de script e automatização de tarefas
 ### Estrutura de DIretórios
-- /home/diogo/Compasso/Projeto_Nginx/
-- │
-- ├── log/                         
-- │   └── nginx_online.log          
-- │   └── nginx_offline.log         
-- ├── monitor_nginx.sh                     
-              
+/Projeto_Nginx/
+
+├── log/                         
+│   ├── nginx_online.log       
+│   ├── nginx_offline.log     
+├── monitor_nginx.sh           
+
 ### Passo 1 : Instalar Nginx 
 - sudo apt update
 - sudo apt install nginx -y
