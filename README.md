@@ -23,8 +23,16 @@ Este projeto configura um servidor Nginx e realiza monitoramento com script auto
 - sudo systemctl enable nginx
 - systemctl status nginx
 ## Passo 2 : Configurar Script de Monitoramento
-
-
-
-
+O script **monitor_nginx.sh** verifica o status do serviço Nginx e registrar se ele está online ou offiline em arquivos de log
+- O script usa o comando *systemctl* para verificar se o serviço está ativo
+- se online ele grava uma mensagem no arquivo *nginx_online.log*
+- senão a mensagem vai para o arquivo *nginx_offiline.log*
+- A mensagem inclui data,hora e status
+## Passo 3 : Automatizar script
+Configuramos o arquivo **cron** para rodar o script **monitor_nginx.sh** a cada 5 minutos
+- crontab -e
+- */5 * * * * /home/diogo/Compasso/Projeto_Nginx/scripts/monitor_nginx.sh
+A caca 5 minutos ele vai executar o script automaticamente
+## Passo 4 : Teste
+Visualise os logs pelo terminal usando o comando **cat** ou por algum editor de texto
 
