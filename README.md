@@ -9,7 +9,11 @@ Este projeto configura um servidor Nginx e realiza monitoramento com script auto
 3. **Bash e Cron**
    -  Criação de script e automatização de tarefas
 ## Passo 1 : Instalar Nginx 
-
+- sudo apt update
+- sudo apt install nginx -y
+- sudo systemctl start nginx
+- sudo systemctl enable nginx
+- systemctl status nginx
 
 
 
