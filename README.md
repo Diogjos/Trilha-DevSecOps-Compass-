@@ -1,4 +1,4 @@
-## Trabalho Compass - Linux e Aws
+## Trabalho Compass - Linux 
 ### Criação e Monitoramento de um servidor local Nginx
 Este projeto configura um servidor Nginx e realiza monitoramento com script automatizado.
 ### Tecnologias Utilizadas
